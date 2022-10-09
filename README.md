@@ -34,30 +34,21 @@ The Output using the file: input2.txt is:
 
 Desing and Architecture Explain:
 
-- Class Main: 
+-- Class Main: 
 
-This Class create an ACME object and load the file input.txt creating the list of objects Employee for every line in the txt file.
-
+This Class create an ACME object and load the file input.txt creating the list of objects Employee for every line in the txt file. 
 Then after having the Employee list, everyone with the Schedule list, compare every Employee in the list with eachother to find if there is a coincidence is the 
-Schedules of two Employees.
+Schedules of two Employees. If there is a coincidence between two Employees, create a Duple object with the names of the Employees and the number of coincidences. After that, print the list of Duple objects.
 
-If there is a coincidence between two Employees, create a Duple object with the names of the Employees and the number of coincidences.
-
-After that, print the list of Duple objects.
-
-- Class ACME
+-- Class ACME: 
 This class keeps and creates the Employees list and the Duples list.
 
-- Class Duple
+-- Class Duple: 
 This class keeps two Employees names and the count of coincides in their Schedules, also verify that an existing pair of Employee dont repeated.
 
-- Class Employee
-This class keeps the name and the Schedules list for one person.
+-- Class Employee:
+This class keeps the name and the Schedules list for one person. Compare two Schedule list and find how many time they coincide in the office eachother.
 
-Compare two Schedule list and find how many time they coincide in the office eachother.
-
-- Class Schedule
-This class keeps the day, the enter Date and the exit Date.
-
-Compare its own Dates with other Schedule date if the enter and exit of both coincide in the office.
+-- Class Schedule:
+This class keeps the day, the enter Date and the exit Date. Compare its own Dates with other Schedule date if the enter and exit of both coincide in the office.
 
