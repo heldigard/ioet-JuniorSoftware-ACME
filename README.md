@@ -17,7 +17,7 @@ This project is coded in Java language, using the SDK Java 19 version and the In
 
 How To RUN:
 
-After compile and generate the Class folder run the program like:
+After compile and generate the Class folder in the folder: out\production, it can be run like this:
 ```
   java.exe -classpath D:\heldigard_Github\ioet-JuniorSoftware-ACME\out\production\TestIOET com.eldi.java.Main input1.txt
 ```
