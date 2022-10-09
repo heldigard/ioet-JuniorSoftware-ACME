@@ -11,6 +11,10 @@ Input: the name of an employee and the schedule they worked, indicating the time
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
+This project is coded in Java language, using the SDK Java 19 version and the IntelliJ IDE.
+
+----------------------------------------------------------------------
+
 How To RUN:
 
 After compile and generate the Class folder run the program like:
