@@ -19,9 +19,9 @@ public class Employee {
     }
 
     /**
-     * Crea la lista de instancias Schedule
+     * Create and fill the Schedule list
      *
-     * @param listScheduleText recibe el string de texto tipo DAYHOUR,DAYHOUR,...
+     * @param listScheduleText string text like DAYHOUR,DAYHOUR,...
      */
     public void setScheduleEmployee(String listScheduleText) {
         String[] parts = listScheduleText.split(",");
@@ -33,9 +33,9 @@ public class Employee {
     }
 
     /**
-     * Crea una instancia de Schedule y la agrega a la lista
+     * Create an Schedule object and add to the list
      *
-     * @param scheduleText recibe el texto tipo DAYHOUR
+     * @param scheduleText string text like DAYHOUR
      */
     private void addSchedule(String scheduleText) {
         if (scheduleText != null) {
@@ -44,9 +44,31 @@ public class Employee {
         }
     }
 
+    /**
+     * Print on console the Employee Schedule list
+     */
     public void printSchedule() {
         for (Schedule schedule : listSchedule) {
             System.out.println(schedule.getDayHour());
         }
+    }
+
+    /**
+     * Compare the current schedule with other Employee schedule
+     *
+     * @param otherEmployee Employee object to compare with
+     * @return the count of matches in schedule
+     */
+    public int compareScheduleWith(Employee otherEmployee) {
+        int countRepeated = 0;
+        for (Schedule otherSchedule : otherEmployee.listSchedule) {
+            for (Schedule mySchedule : listSchedule) {
+                if (otherSchedule.getDayHour().equals(mySchedule.getDayHour())) {
+                    countRepeated = countRepeated + 1;
+                    break;
+                }
+            }
+        }
+        return countRepeated;
     }
 }
