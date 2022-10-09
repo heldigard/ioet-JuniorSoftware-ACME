@@ -64,12 +64,12 @@ public class Employee {
      */
     public int compareScheduleWith(Employee otherEmployee) {
         int countRepeated = 0;
-        for (Schedule otherSchedule : otherEmployee.listSchedule) {
-            for (Schedule mySchedule : listSchedule) {
-//                if (otherSchedule.getDayHour().equals(mySchedule.getDayHour())) {
-//                    countRepeated = countRepeated + 1;
-//                    break;
-//                }
+        for (Schedule mySchedule : this.listSchedule) {
+            for (Schedule otherSchedule : otherEmployee.listSchedule) {
+                if (mySchedule.matchWith(otherSchedule)) {
+                    countRepeated = countRepeated + 1;
+                    break;
+                }
             }
         }
         return countRepeated;
