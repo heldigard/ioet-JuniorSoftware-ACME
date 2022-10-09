@@ -14,21 +14,21 @@ Input: the name of an employee and the schedule they worked, indicating the time
 How To RUN:
 
 After compile and generate the Class folder run the program like:
-
+```
   java.exe -classpath D:\heldigard_Github\ioet-JuniorSoftware-ACME\out\production\TestIOET com.eldi.java.Main input1.txt
-
+```
 Noted that the firts argument is the input.txt file with is in the root folder of running, this case: D:\heldigard_Github\ioet-JuniorSoftware-ACME
 
 The Output using the file: input1.txt is:
-
+```
   RENE-ASTRID: 2
   RENE-ANDRES: 2
   ASTRID-ANDRES: 3
-
+```
 The Output using the file: input2.txt is:
-
+```
   RENE-ASTRID: 3
-
+```
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 
