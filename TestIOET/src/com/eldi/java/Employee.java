@@ -2,6 +2,9 @@ package com.eldi.java;
 
 import java.util.ArrayList;
 
+/**
+ * This Class handles the Employee Info
+ */
 public class Employee {
     private String name;
     private ArrayList<Schedule> listSchedule;
@@ -49,7 +52,7 @@ public class Employee {
      */
     public void printSchedule() {
         for (Schedule schedule : listSchedule) {
-            System.out.println(schedule.getDayHour());
+            schedule.printInfo();
         }
     }
 
@@ -63,10 +66,10 @@ public class Employee {
         int countRepeated = 0;
         for (Schedule otherSchedule : otherEmployee.listSchedule) {
             for (Schedule mySchedule : listSchedule) {
-                if (otherSchedule.getDayHour().equals(mySchedule.getDayHour())) {
-                    countRepeated = countRepeated + 1;
-                    break;
-                }
+//                if (otherSchedule.getDayHour().equals(mySchedule.getDayHour())) {
+//                    countRepeated = countRepeated + 1;
+//                    break;
+//                }
             }
         }
         return countRepeated;

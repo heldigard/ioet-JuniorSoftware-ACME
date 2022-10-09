@@ -1,17 +1,23 @@
 package com.eldi.java;
 
 public class Schedule {
-    private String dayHour;
+    private String day;
+    private int hourBegin;
+    private int hourEnd;
 
-    public Schedule(String dayHour) {
-        this.dayHour = dayHour;
+    public Schedule(String dayHours) {
+        this.extractInfo(dayHours);
     }
 
-    public String getDayHour() {
-        return dayHour;
+    private void extractInfo(String dayHours) {
+        System.out.println(dayHours);
     }
 
-    public void setDayHour(String dayHour) {
-        this.dayHour = dayHour;
+    public void printInfo() {
+        StringBuilder info = new StringBuilder();
+        info.append(this.day);
+        info.append(this.hourBegin);
+        info.append("-");
+        info.append(this.hourEnd);
     }
 }
