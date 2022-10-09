@@ -11,7 +11,7 @@ Input: the name of an employee and the schedule they worked, indicating the time
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
-This project is coded in Java language, using the SDK Java 19 version and the IntelliJ IDE.
+This project is coded in Java language, using the SDK Java 19 version and the IntelliJ IDE. This Folder has only the SOURCE java files, not the compiled ones, the source code is in the folder: \TestIOET\src\com\eldi\java
 
 ----------------------------------------------------------------------
 
